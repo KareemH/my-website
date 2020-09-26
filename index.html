@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kareem's Website</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/default.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <!-- <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"
+      integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7"
+      crossorigin="anonymous"
+    ></script> -->
+  </head>
+  <body>
+    <!-- Intro section -->
+    <section class="s1">
+      <div class="main-container">
+        <div class="greeting-wrapper">
+          <h1>Hi, I'm Kareem</h1>
+        </div>
+
+        <div class="intro-wrapper">
+          <!-- Nav bar -->
+          <div class="nav-wrapper">
+            <!-- Left start of the nav bar -->
+            <div class="dots-wrapper">
+              <div id="dot-1" class="browser-dot"></div>
+              <div id="dot-2" class="browser-dot"></div>
+              <div id="dot-3" class="browser-dot"></div>
+            </div>
+
+            <!-- Right end of the nav bar -->
+            <ul id="navigation">
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Left column -->
+          <div class="left-column">
+            <div id="profile_pic"></div>
+            <h5 style="text-align: center; line-height: 0">
+              Personalize Theme
+            </h5>
+            <!-- The optionns to choose different themes -->
+            <div id="theme-options-wrapper">
+              <div data-mode="light" id="light-mode" class="theme-dot"></div>
+              <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+              <div data-mode="green" id="green-mode" class="theme-dot"></div>
+              <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+            </div>
+            <p id="settings-note">
+              *Theme settings will be saved for<br />your next visit
+            </p>
+          </div>
+
+          <!-- Right column -->
+          <div class="right-column">
+            <div id="preview-shadow">
+              <div id="preview">
+                <div id="corner-top-left" class="corner"></div>
+                <div id="corner-top-right" class="corner"></div>
+                <h3>Who Am I?</h3>
+                <p>Software Developer from NYC</p>
+                <div id="corner-bottom-left" class="corner"></div>
+                <div id="corner-bottom-right" class="corner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="s2">
+      <div class="main-container">
+        <div class="about-wrapper">
+          <!-- Left column detailing bio and tech stack -->
+          <div class="about-me">
+            <h4>Get to know me</h4>
+            <p>
+              Raised in a non-tech savvy household, my younger self always
+              wondered why my computer was slow, what a "404 Error" was, and how
+              to avoid the anxiety inducing error message noise of a Windows
+              desktop. Without knowledge of RAM mechanics or how web
+              technologies worked, I was left clueless. Of course, I was told to
+              shut down the computer and wait 10 seconds (which did work
+              sometimes!). However, this seemed like a naive solution to such a
+              complex device, motivating me to investigate what really goes on
+              under the hood. And as I matured, Computer Science has granted me
+              a "behind the scenes" look to everything that used to confound me
+              and I continue to exponentially grow interest in tech.
+            </p>
+            <p>
+              I am a detail-oriented and inquisitive programmer aiming to
+              leverage an existing knowledge of technical development/design to
+              successfully occupy a junior software developer role. I focus in
+              the domains of general software and web/full-stack development.
+              However, I enjoy exploring and researching different paradigms of
+              technology (data science, OS, networking, etc.) and relating it
+              back to the context of my work.
+            </p>
+
+            <hr />
+            <h4>Tech Stack</h4>
+            <p>
+              Fullstack Developer:
+              <a target="_blank" href="resume.pdf">Download My Resume</a>
+            </p>
+
+            <div id="skills">
+              <ul>
+                <li>JavaScript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Python</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+              </ul>
+
+              <ul>
+                <li>Express.js</li>
+                <li>C++</li>
+                <li>MongoDB</li>
+                <li>Git/Github</li>
+                <li>REST API</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right column displaying images  -->
+          <div class="social-links">
+            <img id="coding_img" src="images/computer_code.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section -->
+    <section class="s1">
+      <div class="main-container">
+        <h3 style="text-align: center">Projects</h3>
+        <div class="post-wrapper">
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/nostalgia.png" alt="" />
+              <div class="post-preview">
+                <h6 class="post-title">Nostalgia Now</h6>
+                <p class="post-intro">
+                  Social media application implemented around the MERN stack
+                  (MongoDB, Express.js, React.js, Node.js) themed around pop
+                  culture in music from 1980s - 2000s
+                  <a
+                    style="color: #17a2b8"
+                    href="https://github.com/KareemH/Nostalgia-Now"
+                    >Demo</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/movie.png" alt="" />
+              <div class="post-preview">
+                <h6 class="post-title">Movie Fight App</h6>
+                <p class="post-intro">
+                  Front end application entirely built with HTML5, CSS3, Bulma
+                  library, JavaScript, and interacts with the OMDB API. Client
+                  can choose 2 out of 280,000 films and stats are highlighted
+                  and compared to determine which film is more coveted by the
+                  public
+                  <a
+                    style="color: #17a2b8"
+                    href="https://github.com/KareemH/Movie-Fight-App"
+                    >Demo</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/graph-theory.png" alt="" />
+              <div class="post-preview">
+                <h6 class="post-title">RNA Reconstruction</h6>
+                <p class="post-intro">
+                  Academic project consisting of two colleagues and I to
+                  implement an algorithm for the RNA Reconstruction problem.
+                  Utilized several graph theory concepts such as BFS and
+                  Eulerian circuits
+                  <a
+                    style="color: #17a2b8"
+                    href="https://github.com/KareemH/https://github.com/KareemH/CSCI-393-Project"
+                    >Demo</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/maze.png" alt="" />
+              <div class="post-preview">
+                <h6 class="post-title">JavaScript Maze Game</h6>
+                <p class="post-intro">
+                  A retro maze game to help practice with utilizing the
+                  Matter.js library
+                  <a
+                    style="color: #17a2b8"
+                    href="https://github.com/KareemH/Maze-Game"
+                    >Demo</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/assembler.png" alt="" />
+              <div class="post-preview">
+                <h6 class="post-title">Mock x86 Assembler</h6>
+                <p class="post-intro">
+                  Academic project consisting of three colleagues and I building
+                  a pseudo-assembler for Computer Archtecture 3. Bootstrap and
+                  JavaScript centered project to mimic functonality and present
+                  a pleasant UI for registers and the call stack
+                  <a
+                    style="color: #17a2b8"
+                    href="https://github.com/KareemH/CSCI-360-Project"
+                    >Demo</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/simon-game.png" alt="" />
+              <div class="post-preview">
+                <h6 class="post-title">Simon Game</h6>
+                <p class="post-intro">
+                  A front-end web app utlizing HTML5, CSS3, JS, and JQuery to
+                  simulate the popular Simon game. This web app keeps track of a
+                  user's current score
+                  <a
+                    style="color: #17a2b8"
+                    href="https://github.com/KareemH/Simon-Game"
+                    >Demo</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/tin-dog.png" alt="" />
+              <div class="post-preview">
+                <h6 class="post-title">Tin Dog</h6>
+                <p class="post-intro">
+                  Static website centered around Tinder for dogs, intended for
+                  practice with Bootstrap and UI desgn
+                  <a
+                    style="color: #17a2b8"
+                    href="https://github.com/KareemH/TinDog"
+                    >Demo</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="post">
+              <img class="thumbnail" src="images/to-do-list.png" alt="" />
+              <div class="post-preview">
+                <h6 class="post-title">To-Do List React App</h6>
+                <p class="post-intro">
+                  Because the world needs yet another to-do list
+                  <a
+                    style="color: #17a2b8"
+                    href="https://github.com/KareemH/To-Do-List-App-Part2"
+                  >
+                    Demo
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s2" id="contact">
+      <div class="main-container">
+        <h3 style="text-align: center">Get In Touch</h3>
+        <div class="footer-wrapper">
+          <div class="footer-link">
+            <a href="https://www.linkedin.com/in/kareem-hussein-222bb817b/"
+              ><i class="fab fa-linkedin fa-5x"></i
+            ></a>
+          </div>
+
+          <div class="footer-link">
+            <a href="https://github.com/KareemH"
+              ><i class="fab fa-github-square fa-5x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
